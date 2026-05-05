@@ -1,73 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Avneesh Singh | Growth Strategist</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>Avneesh Singh | Growth Strategist</title>
+<link rel="stylesheet" href="style.css">
 
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
+<!-- AOS Animation Library -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
 
+<!-- NAVBAR -->
+<nav>
+  <h2>Avneesh</h2>
+  <div>
+    <a href="#about">About</a>
+    <a href="#reels">Reels</a>
+    <a href="#case">Work</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
 <!-- HERO -->
 <section class="hero">
-  <h1 class="fade">Avneesh Singh</h1>
-  <p class="fade delay">Content Strategist • Growth Operator • Sales Closer</p>
-  <a href="#projects" class="btn fade delay2">View Work</a>
+  <div class="hero-text" data-aos="fade-up">
+    <h1>Avneesh Singh</h1>
+    <p>Content Strategist • Growth Operator • Sales Closer</p>
+    <a href="#reels" class="btn">View Work</a>
+  </div>
+
+  <div class="hero-img" data-aos="fade-left">
+    <img src="assets/profile.jpg" alt="Avneesh">
+  </div>
 </section>
 
 <!-- ABOUT -->
-<section class="about fade">
+<section id="about" data-aos="fade-up">
   <h2>About</h2>
   <p>
     I build systems that turn content into attention and attention into revenue.
-    With 1M+ views generated and $10K+/month sales experience, I focus on results—not vanity metrics.
+    1M+ views generated and $10K+/month sales experience.
   </p>
 </section>
 
 <!-- STATS -->
 <section class="stats">
-  <div class="card fade">1M+ Views</div>
-  <div class="card fade">985K Reach</div>
-  <div class="card fade">$10K+/Month</div>
-  <div class="card fade">3X Engagement</div>
+  <div data-aos="zoom-in">1M+ Views</div>
+  <div data-aos="zoom-in">985K Reach</div>
+  <div data-aos="zoom-in">$10K+/Month</div>
+  <div data-aos="zoom-in">3X Engagement</div>
 </section>
 
-<!-- REELS SHOWCASE -->
-<section id="projects" class="reels">
-  <h2>Reel Showcase</h2>
+<!-- REELS -->
+<section id="reels">
+  <h2 data-aos="fade-up">Reel Showcase</h2>
 
-  <div class="grid">
-    <iframe src="https://www.instagram.com/reel/C7ea-7RoHjP/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="></iframe>
-    <iframe src="https://www.instagram.com/reel/DWXgT3Dk2Gg/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="></iframe>
-    <iframe src="https://www.instagram.com/reel/DUg7C2xE_X2/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="></iframe>
+  <div class="reel-grid">
+    <iframe src="https://www.instagram.com/reel/REEL1/embed"></iframe>
+    <iframe src="https://www.instagram.com/reel/REEL2/embed"></iframe>
+    <iframe src="https://www.instagram.com/reel/REEL3/embed"></iframe>
   </div>
 </section>
 
-<!-- CASE STUDIES -->
-<section class="case">
-  <h2>Case Studies</h2>
+<!-- CASE STUDY -->
+<section id="case">
+  <h2 data-aos="fade-up">Case Studies</h2>
 
-  <div class="case-card fade">
-    <h3>Instagram Growth</h3>
-    <p>Scaled a theme page to 1M+ views using viral hooks and retention strategy.</p>
+  <div class="case-card" data-aos="fade-right">
+    <h3>Viral Growth System</h3>
+    <p>Scaled reels to 1M+ views using retention hooks & trend mapping.</p>
   </div>
 
-  <div class="case-card fade">
-    <h3>Sales Funnel</h3>
-    <p>Handled international clients and maintained $10K+/month pipeline.</p>
+  <div class="case-card" data-aos="fade-left">
+    <h3>Sales Funnel Optimization</h3>
+    <p>Maintained $10K+/month pipeline with international clients.</p>
   </div>
-
 </section>
 
 <!-- CONTACT -->
-<section class="contact fade">
-  <h2>Let’s Work</h2>
-  <p>Email: avionprithvii@icloud.com</p>
+<section id="contact" data-aos="fade-up">
+  <h2>Contact</h2>
+  <p>Email: avneeshsinghch03@gmail.com</p>
   <p>Instagram: @avionprithvii</p>
 </section>
+
+<!-- SCRIPTS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
 
 </body>
 </html>
